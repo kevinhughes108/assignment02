@@ -1,5 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
+/* CSS RESETS */
+
+/* reset all elements to use border-box sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /* strip the default margins from these elements */
+  body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+    margin: 0;
+  }
+  /* make the body element always 100% of the height of the window,
+     and set the line-height to 1.5*/
+  body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+  }
+  /* make the line-height a bit smaller for these elements to prevent weird spacing */
+  h1, h2, h3, h4, button, input, label {
+    line-height: 1.1;
+  }
+
+/* Body font styling */
 body {
     font-family: 'Raleway', sans-serif;
   }
+
+/* Styling for main content */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    max-width: 900px;
+    margin: 3rem auto;
+}
+
+/* Styling for entire navbar */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for navbar elements */
+
+header {
+background-color: #ddd;
+display: flex;
+justify-content: space-between;
+}
+
+header h1 {
+flex: 1;
+align-self: center;
+padding: 0 0 0 1rem;
+}
+
+header h2 {
+    flex: 1;
+    align-self: center;
+    padding: 0 0 0 1rem;
+    }
+
+header h1 a {
+text-decoration: none;
+color: black;
+}
+
+header h1 a.current,
+header h1 a:hover {
+text-decoration: underline;
+}
+
+nav {
+flex: 4;
+max-width: 60%;
+}
+
+nav ul {
+display: flex;
+justify-content: space-between;
+padding: 0;
+}
+
+nav ul li {
+list-style: none;
+background-color: floralwhite;
+border: 1px solid black;
+flex: 1;
+text-align: center;
+transition: background-color 1s, rotate 2s;
+}
+
+/* Styling for navbar hover transitions */
+
+nav ul li:hover {
+    rotate: 360deg;
+    background-color: rgb(251, 136, 255);
+}
+
+/*
+nav ul li a {
+text-decoration-thickness: 1rem;
+}     
+*/
+
+/* all divs share these properties
+    width: 10rem;
+    height: 10rem;
+    padding: 1.5rem;	
+    font-size: 1.5rem;
+    margin: 2rem;
+    box-shadow: .5rem .5rem .5rem rgba(0, 0, 3, .1); 
+*/
