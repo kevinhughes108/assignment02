@@ -5,7 +5,7 @@ Assignment 02 by Kevin Hughes
 ## Requirements Needed
 - Design your page to look and function well on a mobile device first, and use CSS media queries to enhance or alter the layout at larger screen sizes.
 - The navigation element current element in the navigation should always be styled to match the style of the :hover from above.
-
+- HTML and CSS validation.
 
 ## Requirements Completed
 - A full-height, full-width background image (commonly called a "hero" image)
