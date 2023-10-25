@@ -95,15 +95,23 @@ background-color: floralwhite;
 border: 1px solid black;
 flex: 1;
 text-align: center;
-transition: background-color 1s, rotate 2s;
+transition: background-color 1s,
+}
+
+nav a.current {
+  list-style: none;
+  flex: 1;
+  text-align: center;
+  background-color: rgb(251, 136, 255);
 }
 
 /* Styling for navbar hover transitions */
 
 nav ul li:hover {
-    rotate: 360deg;
     background-color: rgb(251, 136, 255);
 }
+
+
 
 /*
 nav ul li a {
